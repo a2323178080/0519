@@ -1,3 +1,3 @@
 <template>
-    我是吃飯
+    我是about頁面
 </template>

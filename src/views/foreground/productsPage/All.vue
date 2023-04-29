@@ -1,3 +1,3 @@
 <template>
-    我是all
+    我是所有食物
 </template>

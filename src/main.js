@@ -10,6 +10,10 @@ import axios from 'axios';
 import VueAxios from 'vue-axios';
 
 
+// bootstrap
+import 'bootstrap'
+
+
 // mitt
 import emitter from './methods/bus.js';
 
@@ -41,7 +45,7 @@ import 'vue3-loading-overlay/dist/vue3-loading-overlay.css'
 
 
 
-import 'bootstrap'
+
 
 
 

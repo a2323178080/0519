@@ -1,6 +1,6 @@
 <template>
   <div class="nav" >
-    <Loading v-model:active="isLoading"/>
+    <Loading v-bind:active="isLoading"/>
     <nav class="navbar navbar-expand-lg  navbar-light bg-light text-dark fixed-top">
       <div class="container-fluid">
 
@@ -93,7 +93,7 @@
         <div class="collapse navbar-collapse" id="navbarToggler">
           <ul class="navbar-nav ">
             <li class="nav-item pt-1">
-              <a href="#" class="nav-link text-dark   a-hover fw-bold">產品</a>
+              <a href="#/products/all" class="nav-link text-dark   a-hover fw-bold">產品</a>
             </li>
             <li class="nav-item pt-1">
               <a href="#" class="nav-link text-dark a-hover fw-bold">訂單查詢</a>
