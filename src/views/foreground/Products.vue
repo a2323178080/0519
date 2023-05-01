@@ -19,51 +19,48 @@
       </div>
 
 
-      <div class="row mt-4">
-        <div class="col-12 mb-4">
-          <div class="row d-flex justify-content-between align-items-end">
+        <div class="row mt-4">
+            <div class="col-12 mb-4">
+                <div class="row d-flex justify-content-between align-items-end">
+                    <!-- 選單 -->
+                    <div class="d-none d-md-block col-md-9">
+                        <router-link to="all" class="pe-3 text-dark fs-5 fw-bold a-hover">
+                            <i class="fas fa-utensils"></i>
+                            顯示全部
+                        </router-link>
+                        <router-link to='rice' class="pe-3 text-dark fs-5 fw-bold a-hover">
+                        <i class="fas fa-utensils"></i>
+                            吃飯
+                        </router-link>
+                        <router-link to='noodle' class="pe-3 text-dark fs-5 fw-bold a-hover">
+                            <i class="fas fa-utensils"></i>
+                            吃麵
+                        </router-link>
+                        <router-link to='cuisine' class="pe-3 text-dark fs-5 fw-bold a-hover">
+                            <i class="fas fa-utensils"></i>
+                            私房料理
+                        </router-link>
+                        <router-link to='dessert' class="pe-3 text-dark fs-5 fw-bold a-hover">
+                            <i class="fas fa-utensils"></i>
+                            甜點
+                        </router-link>
+                    </div>
+                    
+                    <div class="d-block col-12 d-md-none">
+                    <!-- 下拉式選單 -->
+                        <select class="form-select  select-icon mt-0"  @change="toProducts">
+                            <option value="all" selected> 顯示全部</option>
+                            <option value="rice">吃飯</option>
+                            <option value="noodle"> 吃麵</option>
+                            <option value="cuisine"> 私房料理</option>
+                            <option value="dessert"> 甜點</option>
+                        </select>
+                    </div>
 
-
-            <!-- 選單 -->
-            <div class="d-none d-md-block col-md-9">
-              <router-link to="all" class="pe-3 text-dark fs-5 fw-bold a-hover">
-                <i class="fas fa-utensils"></i>
-                顯示全部
-              </router-link>
-              <router-link to='rice' class="pe-3 text-dark fs-5 fw-bold a-hover">
-               <i class="fas fa-utensils"></i>
-                吃飯
-              </router-link>
-              <router-link to='noodle' class="pe-3 text-dark fs-5 fw-bold a-hover">
-                <i class="fas fa-utensils"></i>
-                吃麵
-              </router-link>
-              <router-link to='cuisine' class="pe-3 text-dark fs-5 fw-bold a-hover">
-                <i class="fas fa-utensils"></i>
-                私房料理
-              </router-link>
-              <router-link to='dessert' class="pe-3 text-dark fs-5 fw-bold a-hover">
-                <i class="fas fa-utensils"></i>
-                甜點
-              </router-link>
+                </div>
             </div>
-            
-            <div class="col-md-3">
-              <!-- 下拉式選單 -->
-              <select class="form-select d-block d-md-none select-icon mt-0"  @change="toProducts">
-                <option value="all" selected> 顯示全部</option>
-                <option value="rice">吃飯</option>
-                <option value="noodle"> 吃麵</option>
-                <option value="cuisine"> 私房料理</option>
-                <option value="dessert"> 甜點</option>
-              </select>
-            </div>
-
-
-          </div>
+            <RouterView/>
         </div>
-        <RouterView/>
-      </div>
     </div>
   </div>
   <Footer/>

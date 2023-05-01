@@ -46,9 +46,8 @@ import 'vue3-loading-overlay/dist/vue3-loading-overlay.css'
 
 
 
-
-
-
+// currency,data
+import { currency, date } from './methods/filters.js'
 
 
 const app = createApp(App);
@@ -72,4 +71,17 @@ app.component('Loading', Loading)
 
 
 app.use(router);
+
+
+
+// currency,data加入全域
+app.config.globalProperties.$filters = {
+  currency,
+  date
+}
+
+
+
+
+
 app.mount('#app');
