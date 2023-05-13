@@ -46,6 +46,11 @@ const routes = [
    ]
   },
   {
+    path:'/productPage/:id',
+    name:'ProductPage',
+    component: () => import('../views/foreground/ProductPage.vue'),
+  },
+  {
   path:'/about' ,
   name:'About',
   component: () => import('../views/foreground/About.vue'),

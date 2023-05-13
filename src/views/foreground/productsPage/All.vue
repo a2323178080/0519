@@ -6,7 +6,7 @@
       <div class="row row-cols-1 row-cols-md-5 g-3">
 
         <div class="col" v-for="item in products" :key="item.id">
-          <div class="card border-0 box-shadow rounded-0 h-100" @click="getProduct(item.id)">
+          <div class="card border-0 box-shadow rounded-0 h-100" @click="goProduct(item.id)">
             <div style="height: 250px; background-size: cover; background-position: center;" 
             :style="{ backgroundImage: `url(${item.imageUrl})` }"
              >
@@ -94,7 +94,7 @@ export default {
       document.documentElement.scrollTop = 0
     },
     // 進入單一產品細節
-    getProduct (id) {
+    goProduct (id) {
       this.$router.push(`/productPage/${id}`)
     },
     
