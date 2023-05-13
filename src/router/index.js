@@ -51,6 +51,21 @@ const routes = [
     component: () => import('../views/foreground/ProductPage.vue'),
   },
   {
+    path: '/cart',
+    name: 'Cart',
+    component: () => import('../views/foreground/Cart.vue')
+  },
+  {
+    path: '/checkout',
+    name: 'Checkout',
+    component: () => import('../views/foreground/Checkout.vue')
+  },
+  {
+    path: '/checkoutPay/:orderId',
+    name: 'CheckoutPay',
+    component: () => import('../views/foreground/CheckoutPay.vue')
+  },
+  {
   path:'/about' ,
   name:'About',
   component: () => import('../views/foreground/About.vue'),
