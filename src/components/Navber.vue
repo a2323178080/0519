@@ -96,13 +96,13 @@
               <a href="#/products/all" class="nav-link text-dark   a-hover fw-bold">產品</a>
             </li>
             <li class="nav-item pt-1">
-              <a href="#" class="nav-link text-dark a-hover fw-bold">訂單查詢</a>
+              <a href="#/checkOrder" class="nav-link text-dark a-hover fw-bold">訂單查詢</a>
             </li>
             <li class="nav-item pt-1">
-              <a href="#" class="nav-link text-dark a-hover fw-bold">我的收藏</a>
+              <a href="#/followPage" class="nav-link text-dark a-hover fw-bold">我的收藏</a>
             </li>
             <li class="nav-item pt-1">
-              <a href="#" class="nav-link text-dark a-hover fw-bold">關於我們</a>
+              <a href="#/about" class="nav-link text-dark a-hover fw-bold">關於我們</a>
             </li>
           </ul>
         </div>

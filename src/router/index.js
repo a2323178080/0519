@@ -66,6 +66,16 @@ const routes = [
     component: () => import('../views/foreground/CheckoutPay.vue')
   },
   {
+    path: '/checkOrder',
+    name: 'CheckOrder',
+    component: () => import('../views/foreground/CheckOrder.vue')
+  },
+  {
+    path: '/followPage',
+    name: 'FollowPage',
+    component: () => import('../views/foreground/FollowPage.vue')
+  },
+  {
   path:'/about' ,
   name:'About',
   component: () => import('../views/foreground/About.vue'),

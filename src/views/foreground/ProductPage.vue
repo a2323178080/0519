@@ -140,6 +140,8 @@
   <Footer/>
 </template>
 
+
+
 <script>
 import Navber from '@/components/Navber.vue'
 import Footer from '@/components/Footer.vue'
