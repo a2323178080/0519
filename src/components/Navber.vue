@@ -29,7 +29,7 @@
     <!-- 3.登入按鈕購物車按鈕區 -->
         <div class="d-flex  d-md-block pt-1 me-2 order-lg-last">
           <!-- 登入按鈕 -->
-          <a class="navbar-brand text-dark a-hover" href="#">
+          <a class="navbar-brand text-dark a-hover" href="#/login">
             <i class="fas fa-user-circle"></i>
           </a>
 

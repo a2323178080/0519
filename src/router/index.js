@@ -79,7 +79,29 @@ const routes = [
   path:'/about' ,
   name:'About',
   component: () => import('../views/foreground/About.vue'),
-  }
+  },
+  {
+    path: '/login',
+    name: 'Login',
+    component: () => import('../views/foreground/Login.vue')
+  },
+  {
+    path: '/admin',
+    name: 'Admin',
+    component: () => import('../views/background/Dashboard.vue'),
+    children: [
+      {
+        path: 'product',
+        name: 'Product',
+        component: () => import('../views/background/Product.vue')
+      },
+      {
+        path: 'orders',
+        name: 'Orders',
+        component: () => import('../views/background/Orders.vue')
+      },
+    ]
+    }
   
 ]
 
